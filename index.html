@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <style>
+        body {
+            background-color: #ffb6c1; /* Light Pink background */
+            font-family: "Arial", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #ff69b4; /* Hot Pink button color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #ff1493; /* Lighter Pink on hover */
+            transform: scale(1.05); /* Slightly larger on hover */
+        }
+
+        .heart {
+            color: red; /* Red heart color */
+            font-size: 24px;
+            margin-right: 5px;
+            transform: rotate(-45deg);
+        }
+
+        .sparkles {
+            color: #ffcc00; /* Yellow sparkles color */
+            font-size: 20px;
+        }
+
+        /* Add new animations to individual buttons */
+        .button:nth-child(1) {
+            animation: bounce 2s infinite;
+        }
+
+        .button:nth-child(2) {
+            animation: shimmer 2s infinite;
+        }
+
+        /* Define new animations */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes shimmer {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="task1.html" class="button"><span class="heart">❤</span> Task 1</a>
+        <a href="task2.html" class="button"><span class="sparkles">✨</span> Task 2</a>
+        <a href="task3.html" class="button"><span class="heart">❤</span> Task 3</a>
+        <a href="task4.html" class="button"><span class="sparkles">✨</span> Task 4</a>
+        <a href="task5.html" class="button"><span class="heart">❤</span> Task 5</a>
+        <a href="task6.html" class="button"><span class="sparkles">✨</span> Task 6</a>
+        <p>JS Tasks Start</p>
+        <a href="task7.html" class="button"><span class="heart">❤</span> Task 7</a>
+        <a href="task8.html" class="button"><span class="sparkles">✨</span> Task 8</a>
+        <a href="task9.html" class="button"><span class="heart">❤</span> Task 9</a>
+        <a href="task10.html" class="button"><span class="sparkles">✨</span> Task 10</a>
+        <a href="task11.html" class="button"><span class="heart">❤</span> Task 11</a>
+        <a href="task12.html" class="button"><span class="sparkles">✨</span> Task 12</a>
+        <a href="task13.html" class="button"><span class="heart">❤</span> Task 13</a>
+        <a href="task14.html" class="button"><span class="sparkles">✨</span> Task 14</a>
+    </div>
+</body>
+</html>

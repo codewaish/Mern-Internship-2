@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4</title>
+</head>
+<body>
+    <button onclick="displayDate()">Show Date</button>
+    <p id="dateOutput"></p>
+    <button onclick="displayTime()">Show Time</button>
+    <p id="timeOutput"></p>
+</body>
+<script>
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+    
+    function displayDate() {
+        const currentDate = new Date();
+        const formattedDate = `${currentDate.getDate()}/${months[currentDate.getMonth()]}/${currentDate.getFullYear()}`;
+        document.getElementById("dateOutput").innerHTML = formattedDate;
+    }
+
+    function displayTime() {
+        const currentTime = new Date();
+        document.getElementById("timeOutput").innerHTML = currentTime;
+    }
+</script>
+</html>
